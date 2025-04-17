@@ -5,16 +5,396 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Homepage!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>DevOps Hub - Streamline Your Development Pipeline</title>
   </head>
   <body>
-    <h1>Welcome to the Homepage!</h1>
-    <ul>
-      <li id="current"><a href="index.html">Home</a></li>
-      <li>|</li>
-      <li><a href="about.html">About</a></li>
-      <li>|</li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fas fa-code-branch"></i>
+            <span>DevOps Hub</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Accelerate Your Development Pipeline</h1>
+        <p>
+          Modern DevOps practices to streamline your workflow, increase
+          productivity, and deliver high-quality software faster.
+        </p>
+        <div class="cta-buttons">
+          <a href="#features" class="btn">Explore Features</a>
+          <a href="contact.html" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Features Section -->
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>DevOps Solutions</h2>
+            <p>
+              Comprehensive tools and practices to revolutionize your
+              development workflow
+            </p>
+          </div>
+          <div class="features-grid">
+            <!-- CI/CD Feature -->
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Continuous Integration & Delivery</h3>
+                <p>
+                  Automate your build, test, and deployment processes to deliver
+                  high-quality code faster and more reliably.
+                </p>
+              </div>
+            </div>
+            <!-- Docker Feature -->
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fab fa-docker"></i>
+                </div>
+                <h3>Containerization with Docker</h3>
+                <p>
+                  Package your applications and dependencies into lightweight,
+                  portable containers for consistent development and deployment.
+                </p>
+              </div>
+            </div>
+            <!-- Infrastructure as Code Feature -->
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3>Infrastructure as Code</h3>
+                <p>
+                  Manage and provision your infrastructure through code,
+                  ensuring consistency, scalability, and version control.
+                </p>
+              </div>
+            </div>
+            <!-- Monitoring Feature -->
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Monitoring & Observability</h3>
+                <p>
+                  Gain real-time insights into your application's performance,
+                  health, and user experiences with comprehensive monitoring
+                  tools.
+                </p>
+              </div>
+            </div>
+            <!-- Automation Feature -->
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h3>Process Automation</h3>
+                <p>
+                  Streamline and automate repetitive tasks to increase
+                  efficiency, reduce errors, and focus on what truly matters.
+                </p>
+              </div>
+            </div>
+            <!-- Collaboration Feature -->
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-users-cog"></i>
+                </div>
+                <h3>Team Collaboration</h3>
+                <p>
+                  Bridge the gap between development and operations teams with
+                  tools and practices that encourage communication and
+                  collaboration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DevOps Pipeline Section -->
+      <section class="section" style="background-color: #f9f9f9">
+        <div class="container">
+          <div class="section-title">
+            <h2>The DevOps Pipeline</h2>
+            <p>
+              From code to deployment, our comprehensive pipeline ensures
+              quality and efficiency at every step
+            </p>
+          </div>
+          <div class="timeline">
+            <!-- Plan -->
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <h3>Plan</h3>
+                <p>
+                  Define project goals, requirements, and tasks using agile
+                  methodologies and collaborative planning tools.
+                </p>
+              </div>
+            </div>
+            <!-- Code -->
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <h3>Code</h3>
+                <p>
+                  Develop software using version control systems like Git,
+                  enabling collaboration and code review processes.
+                </p>
+              </div>
+            </div>
+            <!-- Build -->
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <h3>Build</h3>
+                <p>
+                  Automate the build process to compile code, run tests, and
+                  create deployable artifacts consistently.
+                </p>
+              </div>
+            </div>
+            <!-- Test -->
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <h3>Test</h3>
+                <p>
+                  Execute automated tests to ensure code quality, functionality,
+                  and performance before deployment.
+                </p>
+              </div>
+            </div>
+            <!-- Deploy -->
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <h3>Deploy</h3>
+                <p>
+                  Automate the deployment process to various environments with
+                  consistency and reliability.
+                </p>
+              </div>
+            </div>
+            <!-- Operate -->
+            <div class="timeline-item right">
+              <div class="timeline-content">
+                <h3>Operate</h3>
+                <p>
+                  Manage the production environment, ensuring high availability,
+                  performance, and security.
+                </p>
+              </div>
+            </div>
+            <!-- Monitor -->
+            <div class="timeline-item left">
+              <div class="timeline-content">
+                <h3>Monitor</h3>
+                <p>
+                  Continuously monitor application performance, user
+                  experiences, and system health to identify issues proactively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tools Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Industry-Leading Tools</h2>
+            <p>
+              Our platform integrates with the best tools in the DevOps
+              ecosystem
+            </p>
+          </div>
+          <div
+            class="tools-showcase"
+            style="
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+              gap: 2rem;
+              text-align: center;
+            "
+          >
+            <div style="flex: 0 0 150px">
+              <i
+                class="fab fa-github"
+                style="font-size: 3rem; color: var(--primary-color)"
+              ></i>
+              <h4>GitHub</h4>
+            </div>
+            <div style="flex: 0 0 150px">
+              <i
+                class="fab fa-jenkins"
+                style="font-size: 3rem; color: var(--primary-color)"
+              ></i>
+              <h4>Jenkins</h4>
+            </div>
+            <div style="flex: 0 0 150px">
+              <i
+                class="fab fa-docker"
+                style="font-size: 3rem; color: var(--primary-color)"
+              ></i>
+              <h4>Docker</h4>
+            </div>
+            <div style="flex: 0 0 150px">
+              <i
+                class="fab fa-kubernetes"
+                style="font-size: 3rem; color: var(--primary-color)"
+              ></i>
+              <h4>Kubernetes</h4>
+            </div>
+            <div style="flex: 0 0 150px">
+              <i
+                class="fab fa-aws"
+                style="font-size: 3rem; color: var(--primary-color)"
+              ></i>
+              <h4>AWS</h4>
+            </div>
+            <div style="flex: 0 0 150px">
+              <i
+                class="fas fa-terminal"
+                style="font-size: 3rem; color: var(--primary-color)"
+              ></i>
+              <h4>Terraform</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        class="section"
+        style="
+          background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+          );
+          color: white;
+          text-align: center;
+        "
+      >
+        <div class="container">
+          <h2 style="margin-bottom: 1.5rem; font-size: 2.5rem">
+            Ready to Transform Your Development Pipeline?
+          </h2>
+          <p style="margin-bottom: 2rem; font-size: 1.2rem">
+            Start implementing DevOps practices today and see the difference in
+            your development workflow.
+          </p>
+          <a
+            href="contact.html"
+            class="btn"
+            style="background-color: white; color: var(--primary-color)"
+            >Get Started Now</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h4>DevOps Hub</h4>
+            <p>
+              Empowering development teams with modern DevOps practices and
+              tools to build, deploy, and scale applications efficiently.
+            </p>
+            <div class="social-links" style="margin-top: 1.5rem">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>DevOps Resources</h4>
+            <ul>
+              <li><a href="#">CI/CD Pipelines</a></li>
+              <li><a href="#">Docker Containers</a></li>
+              <li><a href="#">Kubernetes Orchestration</a></li>
+              <li><a href="#">Infrastructure as Code</a></li>
+              <li><a href="#">Monitoring Solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 DevOps Street, Tech
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+              <li><i class="fas fa-envelope"></i> info@devopshub.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevOps Hub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

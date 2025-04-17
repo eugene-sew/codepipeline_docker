@@ -5,16 +5,408 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>About</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>About - DevOps Hub</title>
   </head>
   <body>
-    <h1>About Us</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>|</li>
-      <li id="current"><a href="about.html">About</a></li>
-      <li>|</li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fas fa-code-branch"></i>
+            <span>DevOps Hub</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="hero" style="min-height: 50vh">
+      <div class="hero-content">
+        <h1>About DevOps Hub</h1>
+        <p>Learn about our mission, vision, and the team behind DevOps Hub</p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Our Story Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Story</h2>
+          </div>
+          <div style="max-width: 800px; margin: 0 auto; text-align: center">
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem">
+              DevOps Hub was founded in 2018 by a team of experienced developers
+              and operations engineers who recognized the need for better
+              integration between development and operations teams. Our founders
+              had experienced firsthand the challenges of siloed teams, slow
+              deployment cycles, and inconsistent environments that plagued the
+              software development industry.
+            </p>
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem">
+              With a vision to transform how teams build, deploy, and manage
+              software, we set out to create a comprehensive platform that would
+              streamline the entire development pipeline. Today, DevOps Hub is
+              trusted by organizations of all sizes, from startups to
+              enterprises, helping them deliver high-quality software faster and
+              more reliably.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission and Vision Section -->
+      <section class="section" style="background-color: #f9f9f9">
+        <div class="container">
+          <div
+            class="features-grid"
+            style="grid-template-columns: repeat(2, 1fr)"
+          >
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Our Mission</h3>
+                <p>
+                  To empower development teams with tools and practices that
+                  streamline the software delivery process, enabling them to
+                  build and deploy high-quality applications with speed,
+                  reliability, and efficiency.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-eye"></i>
+                </div>
+                <h3>Our Vision</h3>
+                <p>
+                  To revolutionize software development by bridging the gap
+                  between development and operations, creating a world where
+                  teams can focus on innovation rather than fighting
+                  infrastructure and deployment challenges.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Our Leadership Team</h2>
+            <p>Meet the experts behind DevOps Hub</p>
+          </div>
+          <div
+            class="features-grid"
+            style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))"
+          >
+            <!-- Team Member 1 -->
+            <div class="feature-card">
+              <div class="feature-card-content" style="text-align: center">
+                <div
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-color: #eee;
+                    margin: 0 auto 1.5rem;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-user"
+                    style="font-size: 5rem; color: #ccc"
+                  ></i>
+                </div>
+                <h3>Sarah Johnson</h3>
+                <p style="color: var(--primary-color); margin-bottom: 1rem">
+                  CEO & Co-Founder
+                </p>
+                <p>
+                  Former DevOps lead at Amazon with 15+ years of experience in
+                  software development and operations.
+                </p>
+              </div>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="feature-card">
+              <div class="feature-card-content" style="text-align: center">
+                <div
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-color: #eee;
+                    margin: 0 auto 1.5rem;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-user"
+                    style="font-size: 5rem; color: #ccc"
+                  ></i>
+                </div>
+                <h3>Michael Chen</h3>
+                <p style="color: var(--primary-color); margin-bottom: 1rem">
+                  CTO & Co-Founder
+                </p>
+                <p>
+                  Cloud architecture specialist with expertise in distributed
+                  systems and containerization technologies.
+                </p>
+              </div>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="feature-card">
+              <div class="feature-card-content" style="text-align: center">
+                <div
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-color: #eee;
+                    margin: 0 auto 1.5rem;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-user"
+                    style="font-size: 5rem; color: #ccc"
+                  ></i>
+                </div>
+                <h3>Priya Patel</h3>
+                <p style="color: var(--primary-color); margin-bottom: 1rem">
+                  VP of Engineering
+                </p>
+                <p>
+                  Automation expert who has helped dozens of companies implement
+                  CI/CD pipelines and DevOps practices.
+                </p>
+              </div>
+            </div>
+            <!-- Team Member 4 -->
+            <div class="feature-card">
+              <div class="feature-card-content" style="text-align: center">
+                <div
+                  style="
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    background-color: #eee;
+                    margin: 0 auto 1.5rem;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i
+                    class="fas fa-user"
+                    style="font-size: 5rem; color: #ccc"
+                  ></i>
+                </div>
+                <h3>David Rodriguez</h3>
+                <p style="color: var(--primary-color); margin-bottom: 1rem">
+                  Head of Customer Success
+                </p>
+                <p>
+                  Dedicated to ensuring our clients achieve their DevOps goals
+                  through training, support, and consultation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section -->
+      <section class="section" style="background-color: #f9f9f9">
+        <div class="container">
+          <div class="section-title">
+            <h2>Why Choose DevOps Hub</h2>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-trophy"></i>
+                </div>
+                <h3>Industry Expertise</h3>
+                <p>
+                  Our team brings decades of combined experience in development,
+                  operations, and DevOps practices across various industries.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3>Customer-Centric Approach</h3>
+                <p>
+                  We work closely with you to understand your unique challenges
+                  and tailor our solutions to meet your specific needs.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Innovative Solutions</h3>
+                <p>
+                  We continuously research and integrate cutting-edge
+                  technologies to keep our platform at the forefront of DevOps
+                  innovation.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <div class="feature-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Comprehensive Training</h3>
+                <p>
+                  We don't just provide tools; we ensure your team has the
+                  knowledge and skills to leverage them effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section
+        class="section"
+        style="
+          background: linear-gradient(
+            135deg,
+            var(--primary-color),
+            var(--secondary-color)
+          );
+          color: white;
+          text-align: center;
+        "
+      >
+        <div class="container">
+          <h2 style="margin-bottom: 1.5rem; font-size: 2.5rem">
+            Ready to Start Your DevOps Journey?
+          </h2>
+          <p style="margin-bottom: 2rem; font-size: 1.2rem">
+            Contact us today to learn how we can help transform your development
+            workflow.
+          </p>
+          <a
+            href="contact.html"
+            class="btn"
+            style="background-color: white; color: var(--primary-color)"
+            >Get in Touch</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h4>DevOps Hub</h4>
+            <p>
+              Empowering development teams with modern DevOps practices and
+              tools to build, deploy, and scale applications efficiently.
+            </p>
+            <div class="social-links" style="margin-top: 1.5rem">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>DevOps Resources</h4>
+            <ul>
+              <li><a href="#">CI/CD Pipelines</a></li>
+              <li><a href="#">Docker Containers</a></li>
+              <li><a href="#">Kubernetes Orchestration</a></li>
+              <li><a href="#">Infrastructure as Code</a></li>
+              <li><a href="#">Monitoring Solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 DevOps Street, Tech
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+              <li><i class="fas fa-envelope"></i> info@devopshub.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevOps Hub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>

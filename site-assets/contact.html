@@ -5,16 +5,387 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact - DevOps Hub</title>
   </head>
   <body>
-    <h1>Contact Us</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>|</li>
-      <li><a href="about.html">About</a></li>
-      <li>|</li>
-      <li id="current"><a href="contact.html">Contact</a></li>
-    </ul>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <i class="fas fa-code-branch"></i>
+            <span>DevOps Hub</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="hero" style="min-height: 50vh">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p>
+          Get in touch with our team to learn how we can help transform your
+          DevOps practices
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Contact Form Section -->
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>Get in Touch</h2>
+            <p>
+              Fill out the form below and one of our DevOps specialists will get
+              back to you within 24 hours
+            </p>
+          </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 3rem;
+            "
+          >
+            <!-- Contact Form -->
+            <div>
+              <div class="contact-form">
+                <form action="#" method="POST">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your full name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your email address"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="company">Company</label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      class="form-control"
+                      placeholder="Your company name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select
+                      id="subject"
+                      name="subject"
+                      class="form-control"
+                      required
+                    >
+                      <option value="" disabled selected>
+                        Select a subject
+                      </option>
+                      <option value="ci-cd">CI/CD Implementation</option>
+                      <option value="containers">Containerization</option>
+                      <option value="infrastructure">
+                        Infrastructure as Code
+                      </option>
+                      <option value="monitoring">
+                        Monitoring & Observability
+                      </option>
+                      <option value="general">General Inquiry</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      placeholder="Tell us about your DevOps needs"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn" style="width: 100%">
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+              <div class="feature-card">
+                <div class="feature-card-content">
+                  <h3 style="margin-bottom: 1.5rem">Our Contact Information</h3>
+                  <div style="margin-bottom: 2rem">
+                    <div
+                      style="
+                        display: flex;
+                        align-items: flex-start;
+                        margin-bottom: 1.5rem;
+                      "
+                    >
+                      <i
+                        class="fas fa-map-marker-alt"
+                        style="
+                          font-size: 1.5rem;
+                          color: var(--primary-color);
+                          margin-right: 1rem;
+                          margin-top: 0.2rem;
+                        "
+                      ></i>
+                      <div>
+                        <h4 style="margin-bottom: 0.5rem">Office Address</h4>
+                        <p>
+                          123 DevOps Street, Tech City<br />Silicon Valley, CA
+                          94088<br />United States
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: flex-start;
+                        margin-bottom: 1.5rem;
+                      "
+                    >
+                      <i
+                        class="fas fa-phone"
+                        style="
+                          font-size: 1.5rem;
+                          color: var(--primary-color);
+                          margin-right: 1rem;
+                          margin-top: 0.2rem;
+                        "
+                      ></i>
+                      <div>
+                        <h4 style="margin-bottom: 0.5rem">Phone</h4>
+                        <p>+1 234 567 8900<br />+1 234 567 8901</p>
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        display: flex;
+                        align-items: flex-start;
+                        margin-bottom: 1.5rem;
+                      "
+                    >
+                      <i
+                        class="fas fa-envelope"
+                        style="
+                          font-size: 1.5rem;
+                          color: var(--primary-color);
+                          margin-right: 1rem;
+                          margin-top: 0.2rem;
+                        "
+                      ></i>
+                      <div>
+                        <h4 style="margin-bottom: 0.5rem">Email</h4>
+                        <p>info@devopshub.com<br />support@devopshub.com</p>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 style="margin-bottom: 1.5rem">Business Hours</h3>
+                  <div style="margin-bottom: 1.5rem">
+                    <p>
+                      <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (PST)
+                    </p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM (PST)</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section -->
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div
+            style="
+              width: 100%;
+              height: 400px;
+              background-color: #eee;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 10px;
+              overflow: hidden;
+            "
+          >
+            <div style="text-align: center; padding: 2rem">
+              <i
+                class="fas fa-map-marked-alt"
+                style="
+                  font-size: 5rem;
+                  color: var(--primary-color);
+                  margin-bottom: 1.5rem;
+                "
+              ></i>
+              <h3>Interactive Map</h3>
+              <p>
+                A Google Maps integration would be displayed here in a live
+                website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section" style="background-color: #f9f9f9">
+        <div class="container">
+          <div class="section-title">
+            <h2>Frequently Asked Questions</h2>
+          </div>
+          <div style="max-width: 800px; margin: 0 auto">
+            <div class="feature-card" style="margin-bottom: 1rem">
+              <div class="feature-card-content">
+                <h3>What is DevOps?</h3>
+                <p>
+                  DevOps is a set of practices that combines software
+                  development (Dev) and IT operations (Ops) to shorten the
+                  systems development life cycle while delivering features,
+                  fixes, and updates frequently in close alignment with business
+                  objectives.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card" style="margin-bottom: 1rem">
+              <div class="feature-card-content">
+                <h3>How can DevOps practices benefit my organization?</h3>
+                <p>
+                  DevOps practices can lead to faster deployment cycles,
+                  improved quality, reduced failure rates, and better
+                  collaboration between teams. This results in more reliable
+                  software delivery, increased efficiency, and better overall
+                  business outcomes.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card" style="margin-bottom: 1rem">
+              <div class="feature-card-content">
+                <h3>Do you offer custom DevOps solutions?</h3>
+                <p>
+                  Yes, we understand that every organization has unique needs
+                  and challenges. Our team works closely with you to design and
+                  implement DevOps solutions tailored to your specific
+                  requirements and goals.
+                </p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-card-content">
+                <h3>What training and support do you provide?</h3>
+                <p>
+                  We offer comprehensive training programs to help your team
+                  adopt DevOps practices effectively. Our support services
+                  include continuous assistance, documentation, and regular
+                  check-ins to ensure your success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h4>DevOps Hub</h4>
+            <p>
+              Empowering development teams with modern DevOps practices and
+              tools to build, deploy, and scale applications efficiently.
+            </p>
+            <div class="social-links" style="margin-top: 1.5rem">
+              <a href="#"><i class="fab fa-github"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Resources</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>DevOps Resources</h4>
+            <ul>
+              <li><a href="#">CI/CD Pipelines</a></li>
+              <li><a href="#">Docker Containers</a></li>
+              <li><a href="#">Kubernetes Orchestration</a></li>
+              <li><a href="#">Infrastructure as Code</a></li>
+              <li><a href="#">Monitoring Solutions</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 123 DevOps Street, Tech
+                City
+              </li>
+              <li><i class="fas fa-phone"></i> +1 234 567 8900</li>
+              <li><i class="fas fa-envelope"></i> info@devopshub.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 DevOps Hub. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript for Menu Toggle -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        hamburger.addEventListener("click", function () {
+          navMenu.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
