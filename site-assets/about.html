@@ -37,7 +37,13 @@
     </header>
 
     <!-- Page Banner -->
-    <section class="hero" style="min-height: 50vh">
+    <section
+      class="hero"
+      style="
+        min-height: 60vh;
+        background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+      "
+    >
       <div class="hero-content">
         <h1>About DevOps Hub</h1>
         <p>Learn about our mission, vision, and the team behind DevOps Hub</p>
@@ -53,7 +59,7 @@
             <h2>Our Story</h2>
           </div>
           <div style="max-width: 800px; margin: 0 auto; text-align: center">
-            <p style="margin-bottom: 1.5rem; font-size: 1.1rem">
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem; color: #444">
               DevOps Hub was founded in 2018 by a team of experienced developers
               and operations engineers who recognized the need for better
               integration between development and operations teams. Our founders
@@ -61,7 +67,7 @@
               deployment cycles, and inconsistent environments that plagued the
               software development industry.
             </p>
-            <p style="margin-bottom: 1.5rem; font-size: 1.1rem">
+            <p style="margin-bottom: 1.5rem; font-size: 1.1rem; color: #444">
               With a vision to transform how teams build, deploy, and manage
               software, we set out to create a comprehensive platform that would
               streamline the entire development pipeline. Today, DevOps Hub is
@@ -78,7 +84,11 @@
         <div class="container">
           <div
             class="features-grid"
-            style="grid-template-columns: repeat(2, 1fr)"
+            style="
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              max-width: 1000px;
+              margin: 0 auto;
+            "
           >
             <div class="feature-card">
               <div class="feature-card-content">
@@ -119,35 +129,18 @@
             <h2>Our Leadership Team</h2>
             <p>Meet the experts behind DevOps Hub</p>
           </div>
-          <div
-            class="features-grid"
-            style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))"
-          >
+          <div class="features-grid">
             <!-- Team Member 1 -->
             <div class="feature-card">
-              <div class="feature-card-content" style="text-align: center">
-                <div
-                  style="
-                    width: 150px;
-                    height: 150px;
-                    border-radius: 50%;
-                    background-color: #eee;
-                    margin: 0 auto 1.5rem;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
+              <div class="feature-card-content team-member">
+                <div class="team-avatar">
                   <i
                     class="fas fa-user"
                     style="font-size: 5rem; color: #ccc"
                   ></i>
                 </div>
                 <h3>Sarah Johnson</h3>
-                <p style="color: var(--primary-color); margin-bottom: 1rem">
-                  CEO & Co-Founder
-                </p>
+                <p class="team-position">CEO & Co-Founder</p>
                 <p>
                   Former DevOps lead at Amazon with 15+ years of experience in
                   software development and operations.
@@ -156,29 +149,15 @@
             </div>
             <!-- Team Member 2 -->
             <div class="feature-card">
-              <div class="feature-card-content" style="text-align: center">
-                <div
-                  style="
-                    width: 150px;
-                    height: 150px;
-                    border-radius: 50%;
-                    background-color: #eee;
-                    margin: 0 auto 1.5rem;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
+              <div class="feature-card-content team-member">
+                <div class="team-avatar">
                   <i
                     class="fas fa-user"
                     style="font-size: 5rem; color: #ccc"
                   ></i>
                 </div>
                 <h3>Michael Chen</h3>
-                <p style="color: var(--primary-color); margin-bottom: 1rem">
-                  CTO & Co-Founder
-                </p>
+                <p class="team-position">CTO & Co-Founder</p>
                 <p>
                   Cloud architecture specialist with expertise in distributed
                   systems and containerization technologies.
@@ -187,29 +166,15 @@
             </div>
             <!-- Team Member 3 -->
             <div class="feature-card">
-              <div class="feature-card-content" style="text-align: center">
-                <div
-                  style="
-                    width: 150px;
-                    height: 150px;
-                    border-radius: 50%;
-                    background-color: #eee;
-                    margin: 0 auto 1.5rem;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
+              <div class="feature-card-content team-member">
+                <div class="team-avatar">
                   <i
                     class="fas fa-user"
                     style="font-size: 5rem; color: #ccc"
                   ></i>
                 </div>
                 <h3>Priya Patel</h3>
-                <p style="color: var(--primary-color); margin-bottom: 1rem">
-                  VP of Engineering
-                </p>
+                <p class="team-position">VP of Engineering</p>
                 <p>
                   Automation expert who has helped dozens of companies implement
                   CI/CD pipelines and DevOps practices.
@@ -218,29 +183,15 @@
             </div>
             <!-- Team Member 4 -->
             <div class="feature-card">
-              <div class="feature-card-content" style="text-align: center">
-                <div
-                  style="
-                    width: 150px;
-                    height: 150px;
-                    border-radius: 50%;
-                    background-color: #eee;
-                    margin: 0 auto 1.5rem;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                  "
-                >
+              <div class="feature-card-content team-member">
+                <div class="team-avatar">
                   <i
                     class="fas fa-user"
                     style="font-size: 5rem; color: #ccc"
                   ></i>
                 </div>
                 <h3>David Rodriguez</h3>
-                <p style="color: var(--primary-color); margin-bottom: 1rem">
-                  Head of Customer Success
-                </p>
+                <p class="team-position">Head of Customer Success</p>
                 <p>
                   Dedicated to ensuring our clients achieve their DevOps goals
                   through training, support, and consultation.
@@ -352,7 +303,7 @@
               Empowering development teams with modern DevOps practices and
               tools to build, deploy, and scale applications efficiently.
             </p>
-            <div class="social-links" style="margin-top: 1.5rem">
+            <div class="social-links">
               <a href="#"><i class="fab fa-github"></i></a>
               <a href="#"><i class="fab fa-twitter"></i></a>
               <a href="#"><i class="fab fa-linkedin"></i></a>
